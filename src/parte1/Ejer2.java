@@ -18,7 +18,7 @@ public class Ejer2 {
 		age = sc.nextInt();
 
 		// Mostramos por pantalla la edad que tendrá el próximo año
-		System.out.println("Su edad el año que viene será de " + age + 1 + " años.");
+		System.out.println("Su edad el año que viene será de " + (age + 1) + " años.");
 	}
 
 }
