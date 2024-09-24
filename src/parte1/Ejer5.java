@@ -12,12 +12,12 @@ public class Ejer5 {
 		// Creamos el Scanner
 		Scanner radioReader = new Scanner(System.in);
 		
-		/* Declaramos la variable float para que el usuario pueda
+		/* Declaramos la variable double para que el usuario pueda
 		 introducir el radio con decimales */
 		double radio;
 		
 		// Introducción del radio
-		radio = radioReader.nextFloat();
+		radio = radioReader.nextDouble();
 		
 		// Declaramos las variables de la longitud y área de la circunferencia
 		double longitud;
