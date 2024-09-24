@@ -20,7 +20,7 @@ public class Ejer9 {
 		// Declaramos una variable para la mayoría de edad
 		String mayor;
 		
-		//
+		// Comprobación de la mayoría de edad
 		if (edad >= 18) {
 			mayor = "Sí";
 		}	
