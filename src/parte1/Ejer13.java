@@ -6,9 +6,7 @@ public class Ejer13 {
 
 	public static void main(String[] args) {
 		// Creación de Scanners
-		Scanner readerLluvia = new Scanner(System.in);
-		Scanner readerBiblio = new Scanner(System.in);
-		Scanner readerTareas = new Scanner(System.in);
+		Scanner reader = new Scanner(System.in);
 		
 		// Declaración de variables
 		boolean lluvia;
@@ -21,19 +19,20 @@ public class Ejer13 {
 		
 		// Primera pregunta
 		System.out.print("\nPrimero de todo, ¿está lloviendo?: ");
-		lluvia = readerLluvia.nextBoolean();
+		lluvia = reader.nextBoolean();
 		
 		// Segunda pregunta
 		System.out.print("\n¿Has terminado tus tareas?: ");
-		tareas = readerTareas.nextBoolean();
+		tareas = reader.nextBoolean();
 		
 		// Tercera pregunta
 		System.out.print("\n¿Necesitas ir a la biblioteca para estudiar?: ");
-		biblio = readerBiblio.nextBoolean();
+		biblio = reader.nextBoolean();
 		
 		// Booleano para calcular la respuesta final
-		System.out.println(biblio ? "\nPuedes salir." : lluvia ? "\nNo puedes salir." : tareas ? "\nPuedes salir." : "\nNo puedes salir.");
-
+		System.out.println((biblio || tareas && !lluvia) ? "\nPuedes salir." : "\nNo puedes salir.");
+		
+		reader.close();
 	}
 
 }
