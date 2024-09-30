@@ -20,7 +20,7 @@ public class Ejer2 {
 		num = 7 - num;
 		
 		// Mensaje final
-		System.out.println("Tienes que sumarle " + num + " para que sea múltiplo de 7.");
+		System.out.println(num == 7 ? "No tienes que sumarle nada a tu número, ya es múltiplo de 7." : "Tienes que sumarle " + num + " para que sea múltiplo de 7.");
 
 	}
 
