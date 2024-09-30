@@ -19,10 +19,13 @@ public class Ejer5 {
 		
 		// Operaciones
 		hours = secs / 3600;
+		mins = secs % 3600;
 		mins = secs / 60;
 		
 		// Mensaje final
-		System.out.println(hours + "h " + (mins < 60 ? mins : mins - 60) + "min");
+		System.out.println(hours);
+		System.out.println(mins);
+		System.out.println(secs);
 
 	}
 
