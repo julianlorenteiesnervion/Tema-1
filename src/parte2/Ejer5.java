@@ -8,10 +8,17 @@ public class Ejer5 {
 		// Scanners
 		Scanner reader = new Scanner(System.in);
 		
-		// Variables
+		// Variable para los segundos
 		int secs;
+		
+		// Variable para las horas finales
 		int hours;
+		
+		// Variable para los minutos finales
 		int mins;
+		
+		// Variable para los segundos finales
+		int finalSecs;
 		
 		// Mensaje para solicitar los segundos
 		System.out.print("Introduce tu cantidad de segundos: ");
@@ -19,13 +26,13 @@ public class Ejer5 {
 		
 		// Operaciones
 		hours = secs / 3600;
-		mins = secs % 3600;
-		mins = secs / 60;
+		mins = (secs % 3600) / 60;
+		finalSecs = (secs % 3600) % 60;
 		
 		// Mensaje final
-		System.out.println(hours);
-		System.out.println(mins);
-		System.out.println(secs);
+		System.out.println(hours + "h " + mins + "min " + finalSecs + "s.");
+		
+		reader.close();
 
 	}
 
